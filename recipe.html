@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recipe.css">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+    <div className="recipe-container">
+      <div className="recipe-card">
+        <div className="recipe-content">
+          <div className="recipe-header">
+            {/* Image - Full width on mobile, constrained on desktop */}
+            <div className="recipe-image-container">
+              <div className="recipe-image">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/desktop-design.jpg-2Cq3NpcNp29bZYFQxWJEN83oIsyyQK.jpeg"
+                  alt="Omelette with vegetables"
+                  width={600}
+                  height={400}
+                  className="recipe-image"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Title and description - Below image on mobile, beside on desktop */}
+            <div className="recipe-title-container">
+              <h1 className="recipe-title">Simple Omelette Recipe</h1>
+              <p className="recipe-description">
+                An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to
+                perfection, optionally filled with your choice of cheese, vegetables, or meats.
+              </p>
+            </div>
+          </div>
+
+          {/* Preparation time */}
+          <div className="prep-time-section">
+            <h2 className="prep-time-title">Preparation time</h2>
+            <ul className="prep-time-list">
+              <li className="prep-time-item">
+                <span className="bullet-point">•</span>
+                <div>
+                  <span className="bold-text">Total:</span> Approximately 10 minutes
+                </div>
+              </li>
+              <li className="prep-time-item">
+                <span className="bullet-point">•</span>
+                <div>
+                  <span className="bold-text">Preparation:</span> 5 minutes
+                </div>
+              </li>
+              <li className="prep-time-item">
+                <span className="bullet-point">•</span>
+                <div>
+                  <span className="bold-text">Cooking:</span> 5 minutes
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* Ingredients */}
+          <div className="section">
+            <h2 className="section-title">Ingredients</h2>
+            <ul className="ingredients-list">
+              <li className="ingredient-item">
+                <span className="ingredient-bullet">•</span>
+                <span>2-3 large eggs</span>
+              </li>
+              <li className="ingredient-item">
+                <span className="ingredient-bullet">•</span>
+                <span>Salt, to taste</span>
+              </li>
+              <li className="ingredient-item">
+                <span className="ingredient-bullet">•</span>
+                <span>Pepper, to taste</span>
+              </li>
+              <li className="ingredient-item">
+                <span className="ingredient-bullet">•</span>
+                <span>1 tablespoon of butter or oil</span>
+              </li>
+              <li className="ingredient-item">
+                <span className="ingredient-bullet">•</span>
+                <span>Optional fillings: cheese, diced vegetables, cooked meats, herbs</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Instructions */}
+          <div className="section">
+            <h2 className="section-title">Instructions</h2>
+            <ol className="instructions-list">
+              <li className="instruction-item">
+                <span className="bold-text">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and
+                pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
+              </li>
+              <li className="instruction-item">
+                <span className="bold-text">Heat the pan:</span> Place a non-stick frying pan over medium heat and add
+                butter or oil.
+              </li>
+              <li className="instruction-item">
+                <span className="bold-text">Cook the omelette:</span> Once the butter is melted and bubbling, pour in
+                the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+              </li>
+              <li className="instruction-item">
+                <span className="bold-text">Add fillings (optional):</span> When the eggs begin to set at the edges but
+                are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.
+              </li>
+              <li className="instruction-item">
+                <span className="bold-text">Fold and serve:</span> As the omelette continues to cook, carefully lift one
+                edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
+              </li>
+              <li className="instruction-item">
+                <span className="bold-text">Enjoy:</span> Serve hot, with additional salt and pepper if needed.
+              </li>
+            </ol>
+          </div>
+
+          {/* Nutrition */}
+          <div className="section">
+            <h2 className="section-title">Nutrition</h2>
+            <p className="nutrition-description">
+              The table below shows nutritional values per serving without the additional fillings.
+            </p>
+            <div className="nutrition-table">
+              <div className="nutrition-row">
+                <div className="nutrition-label">Calories</div>
+                <div className="nutrition-value">277kcal</div>
+              </div>
+              <div className="nutrition-row">
+                <div className="nutrition-label">Carbs</div>
+                <div className="nutrition-value">0g</div>
+              </div>
+              <div className="nutrition-row">
+                <div className="nutrition-label">Protein</div>
+                <div className="nutrition-value">20g</div>
+              </div>
+              <div className="nutrition-row">
+                <div className="nutrition-label">Fat</div>
+                <div className="nutrition-value">22g</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
